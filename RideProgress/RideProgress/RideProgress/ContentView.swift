@@ -1,13 +1,7 @@
-//  ContentView.swift
-//  RideProgress
-//
-//  Created by Miguel Angel Peña Rivas  on 10/11/25.
-//
-
 import SwiftUI
 
 struct ContentView: View {
-    private let yearSummaryCoordinator = YearSummaryCoordinator()
+    @StateObject private var yearSummaryCoordinator = YearSummaryCoordinator()
     @State private var isPresentingYearSummary = false
 
     var body: some View {
